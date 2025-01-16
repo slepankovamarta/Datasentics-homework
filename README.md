@@ -1,4 +1,4 @@
-[Project Summary: Basic KNN Book Recommendation System]([https://github.com/slepankovamarta/Marta_excercises/blob/9c7dc27b38ef468c30c3979042b2b7b44a939b1b/Domaci%20ukol%20VACLAV.ipynb)
+[Project Summary: Basic KNN Book Recommendation System](https://github.com/slepankovamarta/Marta_excercises/blob/9c7dc27b38ef468c30c3979042b2b7b44a939b1b/Domaci%20ukol%20VACLAV.ipynb)
 
 Project Overview
 
