@@ -2,42 +2,19 @@
 
 Project Overview
 
-This project implements a basic Book Recommendation System using the K-Nearest Neighbors (KNN) algorithm. The goal is to recommend books to users based on similar average ratings rather than genre or content, using collaborative filtering techniques. The dataset used combines two data files: Ratings and Books. Although a third dataset, Users, was available, it was not utilized in this project but may be incorporated in the future for more personalized recommendations through customer segmentation (e.g., based on age or location).
+I have implemented a basic Book Recommendation System using the KNN. The dataset used combines two data files: Ratings and Books. Dataset - Users - was available, it was not utilized in this project. In "Future Works" may be incorporated  through customer segmentation (but for example Age must be filled in)
 
 Data Preparation
+The data was merged with newly created average rating (because amount of IDs vary for each book).
+Since the dataset did not include categorical data such as book genres, recommendations were based solely on the similarity of "Average- Ratings"
 
-Ratings Dataset: Contains user ratings for various books.
-
-Books Dataset: Contains book details like titles and authors.
-
-The data was merged to associate each book with its corresponding average rating.
-
-Since the dataset did not include categorical data such as book genres, recommendations were based solely on the similarity of average ratings rather than genre or content.
 
 Models Implemented
-
-1. First Model: KNN with Euclidean Distance
-
-Model: knn_model = NearestNeighbors(n_neighbors=11, metric="euclidean")
-
-Approach:
-
-The pivot matrix was created with books as rows and users as columns, where values represent the average ratings.
-
-The Euclidean distance metric was used to measure the similarity between books based on their ratings.
-
+1. First KNN Model with Euclidean Distance
+(n_neighbors=11, metric="euclidean")
 Recommended books were those with similar average ratings.
 
-2. Second Model: KNN with Cosine Similarity and Popularity Threshold
-
-Model: knn_model2 = NearestNeighbors(n_neighbors=11, metric="cosine", algorithm="brute")
-
-Approach:
-
-A pivot matrix was created similar to the first model.
-
-A popularity threshold was introduced to filter out books with low ratings. Only top-rated books were considered for recommendations.
-
-The cosine similarity metric was used, which is more effective for sparse data, as it measures the angle between rating vectors rather than their absolute difference.
-
-This model focuses on recommending top-rated books, which are often more expensive and therefore prioritized for recommendations.
+2. Second KNN Model with Cosine Similarity and Popularity Threshold
+(n_neighbors=11, metric="cosine", algorithm="brute")
+A popularity threshold to filter TOP books (only top-rated books were considered for recommendations ) meaning, the books that are regularly rated by users with higher score
+Recommending top-rated books, which are often more e.g. expensive 
