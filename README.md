@@ -1,7 +1,4 @@
-# Datasentics-homework
-Homework -Data Scientist
-
-Project Summary: Basic KNN Book Recommendation System
+[Project Summary: Basic KNN Book Recommendation System] https://github.com/slepankovamarta/the-git-rocks/blob/901ac98772a65f8586f77237e4becfda925b7c6d/Domaci%20ukol%20VACLAV.ipynb)
 
 Project Overview
 
